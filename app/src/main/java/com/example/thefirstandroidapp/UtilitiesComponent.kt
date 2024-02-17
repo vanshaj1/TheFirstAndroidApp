@@ -10,6 +10,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -28,11 +30,15 @@ fun UtilitiesComponent(modifier: Modifier,
         modifier = Modifier
             .fillMaxWidth()
             .fillMaxHeight()
-            .background(Color.Blue)
+            .background(MaterialTheme.colorScheme.primary)
     ) {
             Button( modifier = Modifier
                 .align(Alignment.TopStart)
                 .padding(start = 20.dp, top = 30.dp),
+                colors = ButtonDefaults.buttonColors(
+                containerColor = Color.White,
+                contentColor = MaterialTheme.colorScheme.primary)
+                ,
                 onClick = { onConvert() }
             ) {
                 Text(text = "Coverter")
@@ -40,13 +46,21 @@ fun UtilitiesComponent(modifier: Modifier,
             Button( modifier = Modifier
                 .align(Alignment.TopEnd)
                 .padding(end = 20.dp, top = 30.dp),
-                    onClick = { onNextStop() }
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.White,
+                    contentColor = MaterialTheme.colorScheme.primary)
+                ,
+                onClick = { onNextStop() }
             ) {
                 Text(text = "NEXT Stop")
             }
             Button(modifier = Modifier
                 .align(Alignment.Center)
                 .padding(top = 40.dp),
+                colors = ButtonDefaults.buttonColors(
+                containerColor = Color.White,
+                contentColor = MaterialTheme.colorScheme.primary)
+                ,
                 onClick = { onLoadStops() }
             ) {
                 Text(text = "Load Stops")

@@ -23,8 +23,8 @@ fun App(modifier: Modifier) {
     }
     Column{
         ProgressTrackComponent(modifier,stopsList.size,distanceTravelled)
-//        OutputScreenComponent(modifier,stopsList,distanceTravelled,distanceInKm)
-        OutputScreenWithNormalListComponent(modifier,stopsList,distanceTravelled,distanceInKm)
+        OutputScreenComponent(modifier,stopsList,distanceTravelled,distanceInKm)
+//        OutputScreenWithNormalListComponent(modifier,stopsList,distanceTravelled,distanceInKm)
         UtilitiesComponent(modifier,
                             onConvert = {distanceInKm = !distanceInKm},
                             onNextStop = {distanceTravelled++},

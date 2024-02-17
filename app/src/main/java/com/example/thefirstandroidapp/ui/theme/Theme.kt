@@ -41,7 +41,8 @@ private val LightColorScheme = lightColorScheme(
 fun TheFirstAndroidAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+//    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false, // This false value helps in having same colorTheme in android 12+ and preview in android before 12
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

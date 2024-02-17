@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.graphics.Color
 
 @Composable
 fun ProgressTrackComponent(modifier: Modifier,
@@ -23,7 +24,8 @@ fun ProgressTrackComponent(modifier: Modifier,
         modifier = Modifier
             .fillMaxWidth(1f)
             .height(10.dp)
-            .clip(RoundedCornerShape(10.dp))
+            .clip(RoundedCornerShape(10.dp)),
+        color = Color.Cyan
     )
 }
 // 0.111f * 9 -> when 10 stops -> 1 stop distance 0.111 -> 0.111/5 = 0.0222

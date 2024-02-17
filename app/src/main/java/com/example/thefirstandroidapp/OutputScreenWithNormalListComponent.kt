@@ -37,15 +37,16 @@ fun OutputScreenWithNormalListComponent(modifier: Modifier,
             "Miles: "
         }
     }", modifier = Modifier
-        .background(Color.Yellow)
+        .background(MaterialTheme.colorScheme.primary)
         .fillMaxWidth()
         .fillMaxHeight(0.03f)
-        , textAlign = TextAlign.Center
+        , textAlign = TextAlign.Center,
+        color = Color.White
     )
     Box(modifier = modifier
         .fillMaxWidth()
         .fillMaxHeight(0.6f)
-        .background(Color.Red)
+        .background(MaterialTheme.colorScheme.inverseOnSurface)
     ){
         Column(
             Modifier.align(Alignment.TopStart).fillMaxWidth(0.6f)
@@ -72,6 +73,7 @@ fun OutputScreenWithNormalListComponent(modifier: Modifier,
         Column(
             Modifier.align(Alignment.TopEnd)
                 .fillMaxWidth(0.4f)
+                .height(50.dp)
                 .background(Color.White)
         ){
             Text(text = "Covered: ${if(distanceInKm ==  true){
@@ -94,9 +96,10 @@ fun OutputScreenWithNormalListComponent(modifier: Modifier,
         } ahead",
             Modifier
                 .align(Alignment.CenterEnd)
-                .background(Color.Yellow)
+                .background(MaterialTheme.colorScheme.primary)
                 .height(70.dp)
-                .fillMaxWidth(0.4f)
+                .fillMaxWidth(0.4f),
+            color = Color.White
         )
     }
 
