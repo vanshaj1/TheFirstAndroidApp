@@ -103,4 +103,4 @@
 
 # Output
 
-<img height="600" src="TheFirstAndroidAppOutput.jpeg" width="400"/>
+<img height="600" src="TheFirstAndroidAppOutput.jpeg" width="300"/>
