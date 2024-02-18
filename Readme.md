@@ -102,4 +102,4 @@
    - This is used to show the difference between Lazy column and Normal Column, just my commenting it and uncommenting it. 
 
 # Output
-   <img src="D:\Assignments M.Tech 2nd Semester\TheFirstAndroidApp\TheFirstAndroidAppOutput.jpeg"/>
+   ![](D:\Assignments M.Tech 2nd Semester\TheFirstAndroidApp\TheFirstAndroidAppOutput.jpeg)
