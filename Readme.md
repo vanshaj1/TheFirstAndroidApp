@@ -102,4 +102,5 @@
    - This is used to show the difference between Lazy column and Normal Column, just my commenting it and uncommenting it. 
 
 # Output
-   ![](TheFirstAndroidAppOutput.jpeg)
+
+<img height="60" src="TheFirstAndroidAppOutput.jpeg" width="40"/>
